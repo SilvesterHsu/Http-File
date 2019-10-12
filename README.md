@@ -11,7 +11,7 @@ Docker: [link](https://cloud.docker.com/repository/docker/silvesterhsu/httpfile)
 # How to run it?
 
 ```
-docker run -d --restart=always -p "$PORT":80 -v "$PWD":/share silvesterhsu/httpfile:"$TAG"
+docker run -d --name httpfile --restart=always -p "$PORT":80 -v "$PWD":/share silvesterhsu/httpfile:"$TAG"
 ```
 # How to visit files?
-Open brower to visit `localhost:$PORT` for files.
+Open browser to visit `localhost:$PORT` for files.
